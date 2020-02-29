@@ -10,7 +10,7 @@ pipeline {
     stage('构建') {
       steps {
         echo '构建中...'
-        sh './mvnw package'
+        sh 'mvn package'
         echo '构建完成.'
       }
     }
